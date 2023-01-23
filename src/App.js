@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Homepage from "./components/Homepage/Homepage";
+import About from "./components/About/About"
+import Projects from "./components/Projects/Projects";
+import Blogs from "./components/Blogs/Blogs";
+import { DarkModeProvider } from "./DarkModeProvider";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      <BrowserRouter>
+      <Routes>
+        <Route path = "/" element={<Homepage/>}/>
+        <Route path = "/About" element={<About/>}/>
+        <Route path ="/Projects" element ={<Projects/>}/>
+        <Route path = "/Blogs" element ={<Blogs/>}/>
+      </Routes>
+      </BrowserRouter>
+     
     </div>
   );
 }

@@ -1,0 +1,27 @@
+.mainCard{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin: 10px 14px;
+    width: 320px;
+    height: 440px;
+    background-color: white;
+}
+.proImage{
+    height: 200px;
+    width: 300px;
+    margin: 8px;
+    padding:8px;
+    border-radius: 18px;
+}
+.linkBtn,.blogBtn{
+    border-radius: 10px;
+    height: 14px;
+    width: 40px;
+    margin: 10px;
+    color:white;
+}
+.linkBtn{
+    background-color: black;
+}
+.blogBtn{
+    background-color: #0047AB ;
+}

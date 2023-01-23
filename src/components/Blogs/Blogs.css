@@ -1,0 +1,20 @@
+.firstBlog {
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    font-size:18px;
+    font-family:"Albert Sans";
+}
+.hashnodeBtn{
+    background-color: #2a52be;
+    color:white;
+    padding: 6px;
+    font-family:"Albert Sans";
+    border-radius: 6px;
+}
+.substackBtn{
+    color:white;
+    padding: 6px;
+    font-family:"Albert Sans";
+    border-radius: 6px;
+}
