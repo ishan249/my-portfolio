@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
 
-      <BrowserRouter>
+      <BrowserRouter basename="/index.html">
       <Routes>
         <Route path = "/" element={<Homepage/>}/>
         <Route path = "/About" element={<About/>}/>
