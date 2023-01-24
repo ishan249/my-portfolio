@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1fb4bc21.css",
+    "main.js": "/static/js/main.0be554b6.js",
+    "static/media/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg": "/static/media/valeriia-bugaiova-_pPHgeHz1uk-unsplash.07403e4401ee48de1344.jpg",
+    "static/media/Screenshot 2022-09-21 003210.png": "/static/media/Screenshot 2022-09-21 003210.baa9a2f219cbdb79e89c.png",
+    "static/media/Screenshot 2023-01-09 215150.png": "/static/media/Screenshot 2023-01-09 215150.19f86add0d3572ab52c2.png",
+    "static/media/structure.png": "/static/media/structure.4127b36258b5e9dc8f88.png",
+    "static/media/Screenshot 2022-08-28 003248.png": "/static/media/Screenshot 2022-08-28 003248.002cf6b0fa026168c48b.png",
+    "static/media/node-js.png": "/static/media/node-js.e328955d6bbbf3ebc72b.png",
+    "static/media/moon.png": "/static/media/moon.164ae43bddc73d0c7bbf.png",
+    "static/media/twitter.png": "/static/media/twitter.894988327f8d68209e91.png",
+    "static/media/css-3.png": "/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.268c4375260420e8d982.png",
+    "static/media/gmail.png": "/static/media/gmail.a2f2146f929409405da0.png",
+    "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
+    "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/th.webp": "/static/media/th.4c0571512108100c16a6.webp",
+    "index.html": "/index.html",
+    "main.1fb4bc21.css.map": "/static/css/main.1fb4bc21.css.map",
+    "main.0be554b6.js.map": "/static/js/main.0be554b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fb4bc21.css",
+    "static/js/main.0be554b6.js"
+  ]
+}
