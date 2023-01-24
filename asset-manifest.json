@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.1fb4bc21.css",
-    "main.js": "./static/js/main.fba6bd96.js",
+    "main.js": "./static/js/main.4b2a1c13.js",
     "static/media/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg": "./static/media/valeriia-bugaiova-_pPHgeHz1uk-unsplash.07403e4401ee48de1344.jpg",
     "static/media/Screenshot 2022-09-21 003210.png": "./static/media/Screenshot 2022-09-21 003210.baa9a2f219cbdb79e89c.png",
     "static/media/Screenshot 2023-01-09 215150.png": "./static/media/Screenshot 2023-01-09 215150.19f86add0d3572ab52c2.png",
@@ -18,10 +18,10 @@
     "static/media/th.webp": "./static/media/th.4c0571512108100c16a6.webp",
     "index.html": "./index.html",
     "main.1fb4bc21.css.map": "./static/css/main.1fb4bc21.css.map",
-    "main.fba6bd96.js.map": "./static/js/main.fba6bd96.js.map"
+    "main.4b2a1c13.js.map": "./static/js/main.4b2a1c13.js.map"
   },
   "entrypoints": [
     "static/css/main.1fb4bc21.css",
-    "static/js/main.fba6bd96.js"
+    "static/js/main.4b2a1c13.js"
   ]
 }
