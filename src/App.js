@@ -4,12 +4,11 @@ import Homepage from "./components/Homepage/Homepage";
 import About from "./components/About/About"
 import Projects from "./components/Projects/Projects";
 import Blogs from "./components/Blogs/Blogs";
-import { DarkModeProvider } from "./DarkModeProvider";
+
 function App() {
   return (
     <div>
-
-      <BrowserRouter basename="/">
+      <BrowserRouter>
       <Routes>
         <Route path = "/" element={<Homepage/>}/>
         <Route path = "/About" element={<About/>}/>
