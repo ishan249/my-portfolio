@@ -6,10 +6,10 @@ import HomePageBtn from "../Introduction/HomePageBtn";
 import "./Homepage.css";
 import { DarkModeContext } from "../../DarkModeProvider";
 function Homepage() {
-  const {darkMode, setDarkMode} = useContext(DarkModeContext);
+  const {darkMode} = useContext(DarkModeContext);
   return (
     <div className="mainDiv">
-      <div className="mainBody">
+      <div  className="mainBody">
         <div className="content-container">
           <Navbar />
           <div style={{color: darkMode? "white" : "black"}} className="mainName">

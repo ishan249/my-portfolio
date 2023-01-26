@@ -24,9 +24,10 @@ function Blogs() {
             blogs.💻
           </div>
           <div className="firstBlog">If you interested give it a read.</div>
-          <button style={{ marginLeft: "18px" }} className="hashnodeBtn">
-            My Hashnode
-          </button>
+          <a href="https://ishanpatel.hashnode.dev" style={{ marginLeft: "18px" }} className="hashnodeBtn" target="_blank"
+            rel="noopener noreferrer">
+           My Hashnode
+          </a>
           </motion.div>
           <br />
           <motion.div
@@ -40,16 +41,19 @@ function Blogs() {
             experiences &#128151;
           </div>
           <div className="firstBlog">If you have time give it a read.</div>
-          <button
+          <a
+            href="https://ishanpatel.substack.com"
             style={{
               marginLeft: "18px",
               backgroundColor: "rgb(250, 164, 3)",
               color: "white",
             }}
             className="substackBtn"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             My Substack
-          </button>
+          </a>
           </motion.div>
         </div>
       </div>
