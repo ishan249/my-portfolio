@@ -6,21 +6,34 @@ import techData from "./techstackinfo";
 import { motion } from "framer-motion";
 import { DarkModeContext } from "../../DarkModeProvider";
 function About() {
-  const {darkMode} = useContext(DarkModeContext);
+  const { darkMode } = useContext(DarkModeContext);
   return (
     <>
-      <div className="content-container">
-        <div className="mainDiv">
-          <div className="mainBody">
+      <div className="mainDiv">
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            minHeight: "100vh",
+          }}
+          className="mainBody"
+        >
+          <div className="content-container">
             <Navbar />
-            <div style={{color: darkMode? "white" : "black"}} className="font-AlbertSans text-lg mt-2 px-3 py-2">
+            <div
+              style={{ color: darkMode ? "white" : "black" }}
+              className="font-AlbertSans text-lg mt-2 px-3 py-2"
+            >
               I am Computer Science and Engineering student and I am in 3rd Year
               right now. I love creating full stack websites and creating some
               cool stuff which solve some real world problem so doing the same
               since 1 year. You can check out the projects I have done from
               Navbar.
             </div>
-            <div  style={{color: darkMode? "white" : "black"}} className="font-AlbertSans text-lg mt-2 p-2 font-bold">
+            <div
+              style={{ color: darkMode ? "white" : "black" }}
+              className="font-AlbertSans text-lg mt-2 p-2 font-bold"
+            >
               Languages/Frameworks I use :
             </div>
             <div className="flex flex-wrap techStacks font-AlbertSans font-lg">
@@ -52,17 +65,20 @@ function About() {
                 </motion.div>
               ))}
             </div>
-            <div style={{color: darkMode? "white" : "black"}} className="font-AlbertSans text-lg mt-2 mb-2 p-2">
+            <div
+              style={{ color: darkMode ? "white" : "black" }}
+              className="font-AlbertSans text-lg mt-2 mb-2 p-2"
+            >
               I am also real nerd about TV shows and other pop culture things in
               general. Love to read blogs, books sometimes and scroll reddit all
               day.
             </div>
           </div>
+          <div className="footer--pin">
+            <Footer />
+          </div>
         </div>
       </div>
-      <footer className="footer--pin">
-        <Footer />
-      </footer>
     </>
   );
 }

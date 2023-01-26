@@ -13,7 +13,7 @@ function Intro() {
             <div style={{color: darkMode? "rgb(229 231 235)" : "rgb(31 41 55)"}} className="tagLine p-2 font-AlbertSans">
               I build useful websites and cool stuff for the web.
             </div>
-            <div className="text-left text-lg p-4 font-AlbertSans">
+            <div className="text-left p-4 font-AlbertSans">
               <motion.li
               style={{color: darkMode? "white" : "black"}}
                 initial={{ opacity: 0, translateX: 100 }}

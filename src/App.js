@@ -16,7 +16,6 @@ function App() {
         <Route path = "/Blogs" element ={<Blogs/>}/>
       </Routes>
       </BrowserRouter>
-     
     </div>
   );
 }
