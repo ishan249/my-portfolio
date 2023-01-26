@@ -8,7 +8,7 @@
 
 @media only screen and (max-width: 600px) {
   .mainName {
-    margin-top: 0px;
+    margin-top: 8px;
     font-size: 40px;
   }
 }

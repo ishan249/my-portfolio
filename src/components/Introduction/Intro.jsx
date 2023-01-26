@@ -19,7 +19,7 @@ function Intro() {
                 initial={{ opacity: 0, translateX: 100 }}
                 animate={{ opacity: 1, translateX: 0 }}
                 transition={{ duration: 0.8 }}
-                className="introText mx-2"
+                className="introText mx-2 py-2"
               >
                 MERN stack developer who can create fast and scalable websites.{" "}
                 <a
@@ -37,7 +37,7 @@ function Intro() {
                 initial={{ opacity: 0, translateX: 100 }}
                 animate={{ opacity: 1, translateX: 0 }}
                 transition={{ duration:1.2 }}
-                className="mx-2 introText"
+                className="mx-2 introText py-2"
               >
                 I mostly love to code everything related to
                 Frontend structure of the website.{" "}
@@ -47,7 +47,7 @@ function Intro() {
                 initial={{ opacity: 0, translateX: 100 }}
                 animate={{ opacity: 1, translateX: 0 }}
                 transition={{ duration: 1.4 }}
-                className="mx-2 introText"
+                className="mx-2 introText py-2"
               >
                 Learning new frameworks so that I can create better websites.
                 Sharing my learnings through my technical blogs on{" "}

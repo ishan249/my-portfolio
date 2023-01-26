@@ -9,7 +9,7 @@ function Homepage() {
   const {darkMode} = useContext(DarkModeContext);
   return (
     <div className="mainDiv">
-      <div style={{display:"flex", flexDirection:"column",minHeight:"100vh"}}  className="mainBody">
+      <div className="mainBody">
         <div className="content-container">
           <Navbar />
           <div style={{color: darkMode? "white" : "black"}} className="mainName">
@@ -18,9 +18,6 @@ function Homepage() {
           </div>
           <Intro />
           <HomePageBtn/>
-        </div>
-        <div className="footer--pin">
-        <Footer/>
         </div>
       </div>
     </div>
