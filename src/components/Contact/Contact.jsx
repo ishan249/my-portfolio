@@ -5,7 +5,7 @@ import githubLogo from "../../images/github-logo.png";
 import linkedinLogo from "../../images/linkedin.png";
 import twitterLogo from "../../images/twitter.png";
 import gmailImg from "../../images/gmail.png";
-import instagramLogo from "../../images/instagram.png";
+
 import { motion } from "framer-motion";
 import Navbar from "../Navbar/Navbar";
 import { DarkModeContext } from "../../DarkModeProvider";
@@ -14,7 +14,7 @@ function Contact() {
   const info = [
     
     {
-      link: "",
+      link: "mailto:249patelishan@gmail.com",
       image: gmailImg,
       name: "249patelishan@gmail.com",
     },
@@ -33,11 +33,7 @@ function Contact() {
       image: twitterLogo,
       name: "Ishanp249",
     },
-    {
-      link: "https://www.instagram.com/ishan_patel_99/",
-      image: instagramLogo,
-      name: "ishan_patel_99",
-    },
+   
   ];
   return (
     <div className="mainDiv">
@@ -56,11 +52,11 @@ function Contact() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="font-AlbertSans bg-gray-300 hover:bg-gray-100"
+                className="font-AlbertSans bg-gray-200 hover:bg-gray-100"
                 style={{
                   margin: "8px",
-                  padding: "4px",
-                  borderRadius: "8px",
+                  padding: "6px",
+                  borderRadius: "24px",
                   border: "1px black solid",
                 }}
               >

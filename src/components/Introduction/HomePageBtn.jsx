@@ -12,10 +12,10 @@ function HomePageBtn() {
             transition={{duration:1.6}}
             className='flex justify-center'>
             <Link to="/Contact">
-            <button className='font-AlbertSans bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded m-4'>Get in Touch</button>
+            <button className='font-AlbertSans bg-blue-600 hover:bg-blue-700 text-white  py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded m-4'>Get in Touch</button>
             </Link>
-            <Link to="/Blogs">
-            <button className='font-AlbertSans bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 border-b-4 border-yellow-700 hover:border-yellow-500 rounded m-4'>Blogs</button>
+            <Link to="/Projects">
+            <button className='font-AlbertSans bg-amber-500 hover:bg-yellow-600 text-white py-2 px-4 border-b-4 border-yellow-700 hover:border-yellow-500 rounded m-4'>Projects</button>
             </Link>
             </motion.div>
         </div>

@@ -22,7 +22,7 @@ function About() {
             <Navbar />
             <div
               style={{ color: darkMode ? "white" : "black" }}
-              className="font-AlbertSans text-lg mt-2 px-3 py-2"
+              className="font-AlbertSans text-lg px-4 py-2"
             >
               I am Computer Science and Engineering student and I am in 3rd Year
               right now. I love creating full stack websites and creating some
@@ -32,7 +32,7 @@ function About() {
             </div>
             <div
               style={{ color: darkMode ? "white" : "black" }}
-              className="font-AlbertSans text-lg mt-2 p-2 font-bold"
+              className="font-AlbertSans text-lg mt-2 px-4 pb-2 font-bold"
             >
               Languages/Frameworks I use :
             </div>
@@ -67,7 +67,7 @@ function About() {
             </div>
             <div
               style={{ color: darkMode ? "white" : "black" }}
-              className="font-AlbertSans text-lg mt-2 mb-2 p-2"
+              className="font-AlbertSans text-lg mt-2 mb-2 px-4 py-2"
             >
               I am also real nerd about TV shows and other pop culture things in
               general. Love to read blogs, books sometimes and scroll reddit all

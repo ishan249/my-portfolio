@@ -13,7 +13,7 @@ const techData = [
     { image: htmlImg, name: "HTML" },
     { image: cssImg, name: "CSS" },
     { image: jsImg, name: "Javascript" },
-    { image: expressImg, name: "Express" },
+    { image: expressImg, name: "ExpressJs" },
     { image: nodeImg, name: "Nodejs" },
     { image: reactImg, name: "ReactJs" },
     { image: mongoImg, name: "MongoDb" },
