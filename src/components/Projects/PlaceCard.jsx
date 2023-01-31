@@ -20,6 +20,7 @@ function PlaceCard(props) {
         <div className="text-center mt-4">
           <a
             className="px-6 pt-2 pb-2 mb-2 linkBtn"
+            style={{color:darkMode?"black":"white",backgroundColor:darkMode?"white":"black"}}
             href={props.link}
             target="_blank"
             rel="noopener noreferrer"

@@ -1,5 +1,5 @@
 
-import hotelImage from "../../images/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg";
+import hotelImage from "../../images/WhatsApp Image 2023-01-31 at 5.04.27 PM.jpeg";
 import redditImage from "../../images/Screenshot 2022-09-21 003210.png"
 import billImage from "../../images/Screenshot 2022-08-28 003248.png"
 import hangoutImage from "../../images/Screenshot 2023-01-09 215150.png";
