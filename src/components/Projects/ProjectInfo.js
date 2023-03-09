@@ -1,4 +1,4 @@
-
+import designFolioImage from "../../images/WhatsApp Image 2023-03-08 at 9.34.12 PM.jpeg";
 import hotelImage from "../../images/WhatsApp Image 2023-01-31 at 5.04.27 PM.jpeg";
 import redditImage from "../../images/Screenshot 2022-09-21 003210.png"
 import billImage from "../../images/Screenshot 2022-08-28 003248.png"
@@ -6,22 +6,20 @@ import hangoutImage from "../../images/Screenshot 2023-01-09 215150.png";
 const projectInfo = [
   {
     id:1,
+    imageUrl: designFolioImage,
+    ProjectTitle:"DesignFolio",
+    projectDescription: "DesignFolio is a simple and easy to use personal landing page builder. You can have your personal URL linked to your portfolio which has your skills, projects and other information.",
+    projectLink: "https://designfolio.onrender.com",
+    ProjectBlog: "https://ishanpatel.hashnode.dev/landing-page-builder-using-mern",
+  },
+  {
+    id:2,
     imageUrl: hotelImage,
     ProjectTitle:"Hotel Booking System",
     projectDescription: "Developed a Hotel booking management system in which all CRUD operations are implemented. Used MongoDB atlas for managing database.",
     projectLink: "https://hotel-booking-pi.vercel.app/",
     ProjectBlog: "https://ishanpatel.hashnode.dev/hotel-booking-system-with-express-js",
   },
-  
-  {
-    id:2,
-    imageUrl: billImage,
-    ProjectTitle:"BillNote",
-    projectDescription: "Created a bill note, A static webpage which can save how much money you owe or lent to someone.",
-    projectLink: "https://ishan249.github.io/Billnotes/",
-    ProjectBlog: "https://ishanpatel.hashnode.dev/learn-javascript-dom",
-  },
-  
   {
     id:3,
     imageUrl: redditImage,
