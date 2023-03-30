@@ -5,7 +5,7 @@ import githubLogo from "../../images/github-logo.png";
 import linkedinLogo from "../../images/linkedin.png";
 import twitterLogo from "../../images/twitter.png";
 import gmailImg from "../../images/gmail.png";
-
+import peerlistImg from "../../images/favicon_512.png";
 import { motion } from "framer-motion";
 import Navbar from "../Navbar/Navbar";
 import { DarkModeContext } from "../../DarkModeProvider";
@@ -32,6 +32,11 @@ function Contact() {
       link: "https://twitter.com/Ishanp249",
       image: twitterLogo,
       name: "Ishanp249",
+    },
+    {
+      link: "https://peerlist.io/ishan24/",
+      image:  peerlistImg ,
+      name: "ishan24",
     },
    
   ];
