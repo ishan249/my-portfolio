@@ -25,7 +25,7 @@ function Intro() {
                 <a
                style={{color: darkMode? "rgb(94 234 212)" : "rgb(2 132 199)"}}
                   className="underline"
-                  href="https://drive.google.com/file/d/1K9R_ZxVSQm8OX_0Pfcihw0IXRO-5--O9/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1rEV1Y-UCtReyclNMi3wxKLtLMy0kVPtY/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
