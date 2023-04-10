@@ -19,7 +19,7 @@ function PlaceCard(props) {
           <button
             style={{
               backgroundColor: tag.tagColor,
-              boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px;",
+              boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
             }}
             className="m-1 cursor-pointer rounded-full px-3 py-1 transition duration-500 ease-in-out hover:bg-gray-50"
           >
@@ -35,16 +35,16 @@ function PlaceCard(props) {
         <div className="mt-3 flex flex-col items-start space-y-5">
           <h1
             style={{ color: darkMode ? "white" : "black" }}
-            className="text-xl text-center font-bold"
+            className="text-xl text-center font-bold px-1"
           >
             {props.title}
           </h1>
           <p
             style={{
-              height: "120px",
+              height: "110px",
               color: darkMode ? "rgb(229 231 235)" : "rgb(31 41 55)",
             }}
-            className="text-gray-500 text-base"
+            className="text-gray-500 text-base px-1"
           >
             {props.description}
           </p>
@@ -60,6 +60,12 @@ function PlaceCard(props) {
           href={props.link}
           target="_blank"
           rel="noopener noreferrer"
+          onMouseEnter={(e) => {
+            e.target.style.backgroundColor = darkMode ? "rgb(239, 239, 239)" : "#252525";
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.backgroundColor = darkMode ? "white" : "rgb(23, 23, 23)";
+          }}
         >
           Link
         </a>
