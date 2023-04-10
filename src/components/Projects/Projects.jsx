@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import {motion} from "framer-motion";
 import "./Projects.css";
-import "../Homepage/Homepage.css";
+
 import "./ProjectInfo.js";
 import projectInfo from "./ProjectInfo.js";
 import PlaceCard from "./PlaceCard";
@@ -10,8 +10,8 @@ import { DarkModeContext } from "../../DarkModeProvider";
 function Projects() {
   const {darkMode} = useContext(DarkModeContext);
   return (
-    <div className="mainDiv">
-      <div className="mainBody">
+    <div className="projectDiv">  
+      <div className="projectBody">
         <Navbar/>
         <div className="flex flex-wrap justify-around">
           {projectInfo.map((project,i) => (
@@ -27,6 +27,7 @@ function Projects() {
                 title={project.ProjectTitle}
                 description={project.projectDescription}
                 bloglink={project.ProjectBlog}
+                tags = {project.tags}
               />
             </motion.div>
           ))}

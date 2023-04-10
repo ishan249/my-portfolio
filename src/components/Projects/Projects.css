@@ -6,20 +6,50 @@
     background-color: white;
 }
 .proImage{
-    height: 200px;
+    height: 180px;
     width: 338px;
-    margin: 6px;
-    padding:6px;
-    border-radius: 18px;
 }
-.linkBtn,.blogBtn{
+.linkBtn{
     border-radius: 10px;
     height: 14px;
     width: 40px;
     margin: 10px;
-   
+    background-color: rgb(23, 23, 23);
 }
+
+.linkBtn:hover{
+    background-color: #252525;
+}
+@media only screen and (min-width: 768px) {
+    .projectBody {
+      width: 860px;
+    }
+    .projectDiv {
+      display: flex;
+      justify-content: center;
+    }
+  }
 .blogBtn{
     background-color: #216dd7 ;
     color:white;
+    transition: 0.3s;
+    border-radius: 10px;
+    height: 14px;
+    width: 40px;
+    margin: 10px;
+}
+.blogBtn:hover{
+    background-color: #0f438d;
+}
+.cardDiv{
+    width: 348px;
+    height: 534px;
+    margin: 10px 14px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.2s;
+    animation-delay: 3s;
+}
+.cardDiv:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+scale: 103%;
 }
