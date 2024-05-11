@@ -1,13 +1,32 @@
 .navlinks {
-  margin: 16px 12px;
+  margin: 16px 12px 6px 12px;
   padding: 6px;
 }
 .active {
-  text-decoration: underline;
+  border-radius: 8px;
 }
-@media only screen and (min-width: 768px) {
-  .navbar {
-    width: 840px;
-  }
- 
+
+.navlinks a {
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navlinks a:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #000; /* Adjust color as needed */
+  transition: all 0.3s ease;
+}
+
+.navlinks a:hover:before {
+  width: 100%;
+}
+
+.navlinks a.active:before {
+  width: 100%;
 }

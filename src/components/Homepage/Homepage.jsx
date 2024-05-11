@@ -1,25 +1,23 @@
 import React, { useContext } from "react";
-import Intro from "../Introduction/Intro";
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
-import HomePageBtn from "../Introduction/HomePageBtn";
+import MyImage from "../../images/MyImage.jpeg"
 import "./Homepage.css";
 import { DarkModeContext } from "../../DarkModeProvider";
 function Homepage() {
-  const {darkMode} = useContext(DarkModeContext);
+  const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className="mainDiv">
-      <div className="mainBody">
-        <div className="content-container">
-          <Navbar />
-          <div style={{color: darkMode? "white" : "black"}} className="mainName">
-            Hi<span className="wave">👋</span>, I am{" "}
-            <span className="name">Ishan</span>.
-          </div>
-          <Intro />
-          <HomePageBtn/>
-        </div>
+    <div className="homepage-section">
+      <div>
+        <img src={MyImage} alt="myImage" className="MyImage" />
       </div>
+
+    <div style={{ color: darkMode ? "white" : "black" }} className="mainName">
+      Ishan Patel
+      <div style={{ color: darkMode ? "white" : "#71717a" }} className="about-me">
+      Full Stack Developer
+    </div>
+    </div>
+
+   
     </div>
   );
 }

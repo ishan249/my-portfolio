@@ -23,7 +23,7 @@ function Navbar() {
   };
 
   return (
-    <div>
+    <div className="flex justify-end">
       <div
         className="font-AlbertSans navbar text-base flex justify-center"
       >
@@ -34,13 +34,16 @@ function Navbar() {
           <NavLink to="/About">About</NavLink>
         </div>
         <div style={styles} className="navlinks">
+          <NavLink to="/Blog">Blog</NavLink>
+        </div>
+        <div style={styles} className="navlinks">
           <NavLink to="/Projects">Projects</NavLink>
         </div>
-        <div className="navlinks">
+        {/* <div className="navlinks">
           <button onClick={handleTheme}>
             {darkMode?<img height="24px" width="24px" style={{color:"white",borderRadius:"50%"}} src={themechange} alt="" />:<img height="24px" width="24px" style={{color:"white",borderRadius:"50%"}} src={darkThemeImg} alt="" />}        
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
