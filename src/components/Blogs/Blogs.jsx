@@ -11,7 +11,7 @@ function Blogs() {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <>
+    <div className="px-6 py-4">
       <motion.div
         style={{ color: darkMode ? "white" : "black" }}
         initial={{ opacity: 0, translateX: -80 }}
@@ -22,9 +22,10 @@ function Blogs() {
           Blogs on tech, life, and learnings
         </div>
         <div className="firstBlog">
-        All of my thoughts on programming, building projects, life, and other random stuff. Not structured. Not in order.💻
+          All of my thoughts on programming, building projects, life, and other
+          random stuff. Not structured. Not in order.💻
         </div>
-       {/* <a
+        {/* <a
           href="https://ishanpatel.hashnode.dev"
           style={{ marginLeft: "18px" }}
           className="hashnodeBtn"
@@ -43,18 +44,25 @@ function Blogs() {
       >
         {blogsData.map((blog) => (
           <div key={blog.id} className="firstBlog">
-            <Link to={`/blogs/${blog.slug}`} className="text-lg font-semibold">{blog.title}</Link>
-            <div className="text-lg text-zinc-600 font-medium">{blog.summary}</div>
-            <Link className="flex content-center  mt-2" to={`/blogs/${blog.slug}`}>
+            <Link to={`/blogs/${blog.slug}`} className="text-lg font-semibold">
+              {blog.title}
+            </Link>
+            <div className="text-lg text-zinc-600 font-medium">
+              {blog.summary}
+            </div>
+            <Link
+              className="flex content-center  mt-2"
+              to={`/blogs/${blog.slug}`}
+            >
               <div className="mr-2">Read More</div>
               <div>
-              <FontAwesomeIcon icon={faArrowRight} />
+                <FontAwesomeIcon icon={faArrowRight} />
               </div>
             </Link>
           </div>
         ))}
       </motion.div>
-    </>
+    </div>
   );
 }
 

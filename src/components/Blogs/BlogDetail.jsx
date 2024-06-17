@@ -15,7 +15,7 @@ const BlogDetailPage = () => {
   }
 
   return (
-    <div className="font-AlbertSans">
+    <div className="font-AlbertSans px-6 py-4">
       <span
         role="button"
         onClick={() => {
