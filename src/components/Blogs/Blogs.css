@@ -1,9 +1,5 @@
-.firstBlog {
-    text-align: left;
-    padding: 10px;
-    margin: 10px;
-    font-size:18px;
-    font-family:"Albert Sans";
+.firstBlog{
+    font-family: "Albert Sans", "sans-serif";
 }
 .hashnodeBtn{
     background-color: #2a52be;
@@ -18,3 +14,20 @@
     font-family:"Albert Sans";
     border-radius: 6px;
 }
+.content-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Add some padding for better readability */
+    word-wrap: break-word;
+  }
+
+  code {
+    white-space : pre-wrap !important;
+    font-family: "Albert Sans", sans-serif;
+    line-height: 26px;
+    font-size: 17px;
+  }
+
+  .redirect-back-chevron{
+    margin: 8px 4px;
+  }

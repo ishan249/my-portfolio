@@ -30,11 +30,11 @@ function Navbar() {
         <div style={styles} className="navlinks">
           <NavLink to="/">Home</NavLink>
         </div>
-        <div style={styles} className="navlinks">
+        {/* <div style={styles} className="navlinks">
           <NavLink to="/About">About</NavLink>
-        </div>
+        </div> */}
         <div style={styles} className="navlinks">
-          <NavLink to="/Blog">Blog</NavLink>
+          <NavLink to="/Blogs">Blogs</NavLink>
         </div>
         <div style={styles} className="navlinks">
           <NavLink to="/Projects">Projects</NavLink>

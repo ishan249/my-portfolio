@@ -1,11 +1,18 @@
 import { useContext, React } from "react";
 import "./Projects.css";
 import { DarkModeContext } from "../../DarkModeProvider";
+import { useNavigate } from "react-router-dom";
 
 function PlaceCard(props) {
   const { darkMode } = useContext(DarkModeContext);
+  const handleNavigateToProject = (projectLink) => {
+    window.open(projectLink, "_blank");
+  };
+
   return (
     <div
+      onClick={() => handleNavigateToProject(props.link)}
+      role="button"
       style={{ backgroundColor: darkMode ? "rgb(31 41 55)" : "white" }}
       className="cardDiv rounded-2xl p-4 font-AlbertSans"
     >
@@ -14,8 +21,8 @@ function PlaceCard(props) {
         src={props.image}
         alt="projectImage"
       />
-      <div className="mt-5">
-        {props.tags.map((tag) => (
+      <div className="mt-4">
+        {/* {props.tags.map((tag) => (
           <button
             style={{
               backgroundColor: tag.tagColor,
@@ -30,12 +37,14 @@ function PlaceCard(props) {
               {tag.tagName}
             </h6>
           </button>
-        ))}
+        ))} */}
 
-        <div className="mt-3 flex flex-col items-start space-y-5">
+        <div className="mt-3 flex flex-col items-start space-y-2">
           <h1
+            onClick={() => handleNavigateToProject(props.link)}
             style={{ color: darkMode ? "white" : "black" }}
             className="text-xl text-center font-bold px-1"
+            role="button"
           >
             {props.title}
           </h1>
@@ -44,13 +53,13 @@ function PlaceCard(props) {
               height: "110px",
               color: darkMode ? "rgb(229 231 235)" : "rgb(31 41 55)",
             }}
-            className="text-gray-500 text-base px-1"
+            className="text-gray-500 text-base px-1 pb-2"
           >
             {props.description}
           </p>
         </div>
       </div>
-      <div className="text-center mt-8">
+      {/* <div className="text-center mt-8">
         <a
           className="px-6 pt-2 pb-2 mb-2 linkBtn"
           style={{
@@ -77,7 +86,7 @@ function PlaceCard(props) {
         >
           Blog
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
