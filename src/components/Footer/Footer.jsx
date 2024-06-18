@@ -6,13 +6,14 @@ function Footer() {
       <span className="font-bold ">Connect.</span>
 
       <div className="font-medium mt-2">
-        <span className="text-zinc-500">Connect with me on :</span>
+        <p className="text-zinc-500">Connect with me on :</p>
+
         <span>
           <a
             rel="noreferrer"
             href="https://twitter.com/Ishanp249"
             target="_blank"
-            className="social-link ml-2"
+            className="social-link"
           >
             Twitter,
           </a>
@@ -39,8 +40,8 @@ function Footer() {
         </span>
       </div>
 
-      <div className="font-medium mt-1">
-        <span className="text-zinc-500">Email ID :</span>
+      <div className="font-medium mt-2">
+        <p className="text-zinc-500">Email ID :</p>
         <span>
           <a
             rel="noreferrer"

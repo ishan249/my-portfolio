@@ -106,8 +106,8 @@ function Homepage() {
             View All
           </button>
         </div>
-      </div>
       <Footer/>
+      </div>
     </motion.div>
   );
 }

@@ -2,7 +2,7 @@ li{
     display: inline-block;
 }
 .social-link{
-    margin: 0px 4px;
+    margin: 0px 4px 0px 0px;
     text-decoration: underline;
 }
 .social-link:hover{
