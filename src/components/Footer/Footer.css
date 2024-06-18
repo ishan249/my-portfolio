@@ -1,3 +1,10 @@
 li{
     display: inline-block;
 }
+.social-link{
+    margin: 0px 4px;
+    text-decoration: underline;
+}
+.social-link:hover{
+    color: rgb(113, 113,122);
+}

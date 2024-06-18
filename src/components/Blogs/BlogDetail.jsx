@@ -6,6 +6,7 @@ import blogsData from "./MyBlogs";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Footer/Footer";
 const BlogDetailPage = () => {
   const { slug } = useParams();
   const blog = blogsData.find((blog) => blog.slug === slug);
@@ -39,7 +40,7 @@ const BlogDetailPage = () => {
       >
         {blog.content}
       </ReactMarkdown>
-      
+      <Footer/>
     </div>
   );
 };

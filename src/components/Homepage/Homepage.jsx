@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import projectInfo from "../Projects/ProjectInfo";
 import blogsData from "../Blogs/MyBlogs";
 import { motion } from "framer-motion";
-
+import Footer from "../Footer/Footer";
 function Homepage() {
   const { darkMode } = useContext(DarkModeContext);
   const navigate = useNavigate();
@@ -107,6 +107,7 @@ function Homepage() {
           </button>
         </div>
       </div>
+      <Footer/>
     </motion.div>
   );
 }
