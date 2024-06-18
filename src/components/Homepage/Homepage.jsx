@@ -6,12 +6,19 @@ import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import projectInfo from "../Projects/ProjectInfo";
 import blogsData from "../Blogs/MyBlogs";
+import { motion } from "framer-motion";
+
 function Homepage() {
   const { darkMode } = useContext(DarkModeContext);
-const navigate = useNavigate();
-  
+  const navigate = useNavigate();
+
   return (
-    <div className="homepage-section">
+    <motion.div
+      initial={{ opacity: 0, translateX: -80 }}
+      animate={{ opacity: 1, translateX: 0 }}
+      transition={{ duration: 0.8 }}
+      className="homepage-section"
+    >
       <div>
         <img src={MyImage} alt="myImage" className="MyImage" />
       </div>
@@ -38,7 +45,8 @@ const navigate = useNavigate();
           much more.
         </div>
         <div style={{ color: darkMode ? "white" : "#71717a" }} className="mt-6">
-          Love to Write, Watch TV shows, Sitcoms, Deepdive into Reddit theories and crazy internet stuff on weekends.
+          Love to Write, Watch TV shows, Sitcoms, Deepdive into Reddit theories
+          and crazy internet stuff on weekends.
         </div>
       </div>
 
@@ -47,7 +55,9 @@ const navigate = useNavigate();
         <div className="mt-3">
           {blogsData.map((blog) => (
             <>
-              <Link to={`/blogs/${blog.slug}`} className="blog-links">{blog.title}</Link>
+              <Link to={`/blogs/${blog.slug}`} className="blog-links">
+                {blog.title}
+              </Link>
               <div
                 style={{ color: darkMode ? "white" : "#71717a" }}
                 className="blog-description"
@@ -60,21 +70,25 @@ const navigate = useNavigate();
           <button
             type="button"
             className="focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-md px-3 py-2 mb-2"
-            onClick={()=> navigate("/Blogs")}
-
+            onClick={() => navigate("/Blogs")}
           >
             View All
           </button>
         </div>
       </div>
 
-
       <div className="mt-8 font-AlbertSans home-sections">
         <span className="font-bold ">Projects.</span>
         <div className="mt-3">
-          {projectInfo.slice(0,2).map((project) => (
+          {projectInfo.slice(0, 2).map((project) => (
             <>
-              <div role="button" onClick={()=>window.open(project.projectLink, "_blank")} className="blog-links">{project.ProjectTitle}</div>
+              <div
+                role="button"
+                onClick={() => window.open(project.projectLink, "_blank")}
+                className="blog-links"
+              >
+                {project.ProjectTitle}
+              </div>
               <div
                 style={{ color: darkMode ? "white" : "#71717a" }}
                 className="blog-description"
@@ -87,13 +101,13 @@ const navigate = useNavigate();
           <button
             type="button"
             className="focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-md px-3 py-2 mb-2"
-            onClick={()=> navigate("/Projects")}
+            onClick={() => navigate("/Projects")}
           >
             View All
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

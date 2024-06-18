@@ -46,7 +46,7 @@
   background-color: #0f438d;
 }
 .cardDiv {
-  width: 380px;
+  max-width: 360px;
   /* height: 524px; */
   margin: 10px 14px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -63,4 +63,13 @@
 }
 .new{
     color: rgb(239, 239, 239);
+}
+@media only screen and (max-width: 460) {
+  .projectBody {
+    width: 860px;
+  }
+  .projectDiv {
+    display: flex;
+    justify-content: center;
+  }
 }

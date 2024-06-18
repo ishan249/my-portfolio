@@ -22,22 +22,7 @@ function PlaceCard(props) {
         alt="projectImage"
       />
       <div className="mt-4">
-        {/* {props.tags.map((tag) => (
-          <button
-            style={{
-              backgroundColor: tag.tagColor,
-              boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
-            }}
-            className="m-1 cursor-pointer rounded-full px-3 py-1 transition duration-500 ease-in-out hover:bg-gray-50"
-          >
-            <h6
-              style={{ color: "black", opacity: "0.6" }}
-              className="text-xs font-semibold"
-            >
-              {tag.tagName}
-            </h6>
-          </button>
-        ))} */}
+
 
         <div className="mt-3 flex flex-col items-start space-y-2">
           <h1
@@ -50,7 +35,7 @@ function PlaceCard(props) {
           </h1>
           <p
             style={{
-              height: "110px",
+              minHeight: "110px",
               color: darkMode ? "rgb(229 231 235)" : "rgb(31 41 55)",
             }}
             className="text-gray-500 text-base px-1 pb-2"
